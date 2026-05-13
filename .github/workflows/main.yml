@@ -19,7 +19,7 @@ jobs:
       - name: Run script
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: python update_drama.py # あなたのファイル名に変えてください
+        run: python update_drama.py
       - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
